@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/auth.css">
+    <link rel="icon" type="image/x-icon" href="asset/icon.png">
+    <title>ورود / ثبت نام - Safarak</title>
+</head>
+
+<body>
+<nav>
+    <div class="heading">
+        <img src="asset/logo.png" class="logo">
+        <span class="site-name">Safarak</span>
+    </div>
+    <ul class="navbar">
+        <li><a href="comment.html">صدای مشتری</a></li>
+        <li><a href="landing_page.html#contact">تماس با ما</a></li>
+        <li><a href="landing_page.html#services">خدمات</a></li>
+        <li><a href="landing_page.html#about-us">درباره ما</a></li>
+        <li><a href="auth.html">ورود / ثبت نام</a></li>
+    </ul>
+</nav>
+
+<section class="auth-section">
+    <div class="auth-container">
+        <div class="form-container">
+            <h2>ورود</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="login-email">ایمیل</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">رمز عبور</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="input-group">
+                    <label>ادمین</label>
+                    <input type="checkbox" id="admin-toggle">
+                </div>
+                <div class="input-group admin-only" style="display: none;">
+                    <label for="admin-code">کد ادمین</label>
+                    <input type="text" id="admin-code">
+                </div>
+                <button type="submit">ورود</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <h2>ثبت نام</h2>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="role">نقش</label>
+                    <select id="role" required>
+                        <option value="passenger">مسافر</option>
+                        <option value="driver">راننده</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="signup-name">نام</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">ایمیل</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">رمز عبور</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <div class="input-group driver-only" style="display: none;">
+                    <label for="city">شهر</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="input-group driver-only" style="display: none;">
+                    <label for="area">ناحیه</label>
+                    <input type="text" id="area">
+                </div>
+                <button type="submit">ثبت نام</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="./scripts/auth.js"></script>
+
+<!-- Footer section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="asset/logo.png" class="footer-logo-img">
+                <span class="footer-site-name">Safarak</span>
+            </div>
+            <div class="footer-links">
+                <a href="landing_page.html#about-us">درباره ما</a>
+                <a href="landing_page.html#services">خدمات</a>
+                <a href="landing_page.html#contact">تماس با ما</a>
+                <a href="auth.html">ورود / ثبت نام</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Safarak. All rights reserved.</p>
+            <p>Web-programing-Spring 2024</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

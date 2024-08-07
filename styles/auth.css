@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: "B Nazanin";
+    background-color: #23282F;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, nav, footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: "Baskerville Old Face";
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: end;
+    gap: 7px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    max-height: 100%;
+    margin-right: 0px;
+}
+
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F6C90E;
+    margin-left: 0px;
+}
+
+nav {
+    background-color: #23282f;
+    padding-inline: 20px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar {
+    font-family: "B Nazanin";
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+nav .navbar li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 30px;
+}
+
+nav .navbar li a:hover {
+    background-color: #F6C90E;
+    color: #23282f;
+}
+
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 350px;
+    margin: 10px;
+}
+
+.form-container h2 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-weight: bold;
+    text-align: right;
+    display: block;
+}
+
+.input-group input, .input-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: right;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+.input-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.input-group .admin-only, .input-group .driver-only {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.input-group .admin-only label, .input-group .driver-only label {
+    text-align: right;
+    font-weight: bold;
+}
+
+.input-group .admin-only input, .input-group .driver-only input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: right;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: calc(100% - 22px);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F6C90E;
+    color: #23282F;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #eeb408;
+}
+
+footer {
+    background-color: #23282f;
+    color: #EEEEEE;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-img {
+    width: 40px;
+    height: auto;
+}
+
+.footer-site-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F6C90E;
+}
+
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #EEEEEE;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #F6C90E;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 1060px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .auth-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .auth-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

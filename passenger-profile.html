@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="asset/icon.png">
+    <link rel="stylesheet" href="./styles/passenger-profile.css">
+    <title>پروفایل مسافر - Safarak</title>
+</head>
+<body>
+<nav>
+    <div class="heading">
+        <img src="asset/logo.png" class="logo">
+        <span class="site-name">Safarak</span>
+    </div>
+    <ul class="navbar">
+        <li><a href="comment.html">صدای مشتری</a></li>
+        <li><a href="landing_page.html#contact">تماس با ما</a></li>
+        <li><a href="landing_page.html#services">خدمات</a></li>
+        <li><a href="landing_page.html#about-us">درباره ما</a></li>
+        <li><a href="auth.html">ورود / ثبت نام</a></li>
+    </ul>
+</nav>
+<section class="profile-section">
+    <div class="profile-container">
+        <h2>پروفایل مسافر</h2>
+        <div class="tabs">
+            <button class="tab-button" data-tab="trips" onclick="openTab(event, 'trips')">سفرهای قبلی</button>
+            <button class="tab-button" data-tab="request-taxi" onclick="openTab(event, 'request-taxi')">درخواست تاکسی</button>
+            <button class="tab-button" data-tab="info" onclick="openTab(event, 'info')">مشخصات</button>
+        </div>
+        <div id="info" class="tab-content"></div>
+        <div id="request-taxi" class="tab-content">
+            <h3>درخواست جدید تاکسی</h3>
+            <button id="add-request-button">+</button>
+            <form id="taxi-request-form" style="display: none;">
+                <label for="origin">مبدا:</label>
+                <input type="text" id="origin" name="origin" required><br>
+                <label for="destination">مقصد:</label>
+                <input type="text" id="destination" name="destination" required><br>
+                <label for="fare">مبلغ:</label>
+                <input type="number" id="fare" name="fare" required><br>
+                <button type="submit">ارسال درخواست</button>
+            </form>
+            <h3>درخواست‌های جاری</h3></div>
+        <div id="trips" class="tab-content"></div>
+    </div>
+</section>
+<script src="./scripts/passenger-profile.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="asset/logo.png" class="footer-logo-img"/>
+                <span class="footer-site-name">Safarak</span>
+            </div>
+            <div class="footer-links">
+                <a href="landing_page.html#about-us">درباره ما</a>
+                <a href="landing_page.html#services">خدمات</a>
+                <a href="landing_page.html#contact">تماس با ما</a>
+                <a href="auth.html">ورود / ثبت نام</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Safarak. All rights reserved.</p>
+            <p>Web-programming-Spring 2024</p>
+        </div>
+    </div>
+</footer>
+</html>

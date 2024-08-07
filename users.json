@@ -1,0 +1,120 @@
+[
+  {
+    "role": "driver",
+    "name": "جان دوک",
+    "email": "john.doe@example.com",
+    "password": "password123",
+    "city": "مشهد",
+    "area": "احمد آباد - ملک آباد",
+    "trips": [
+      {
+        "id": 1,
+        "details": "سفر اول"
+      },
+      {
+        "id": 2,
+        "details": "سفر دوم"
+      }
+    ],
+    "requests": [
+      {
+        "id": 1,
+        "details": "درخواست اول"
+      },
+      {
+        "id": 2,
+        "details": "درخواست دوم"
+      }
+    ]
+  },
+  {
+    "role": "passenger",
+    "name": "جنی الکساندرو",
+    "email": "jane.smith@example.com",
+    "password": "pass123",
+    "taxi_requests": [
+      {
+        "id": 1,
+        "origin": "میدان آزادی",
+        "destination": "ونک",
+        "fare": 25000
+      }
+    ],
+    "trips": [
+      {
+        "id": 1,
+        "origin": "میدان آزادی",
+        "destination": "ونک",
+        "fare": 25000
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "name": "مایکل اسمیت",
+    "email": "admin@example.com",
+    "password": "admin123",
+    "adminCode": "admin1234"
+  },
+  {
+    "role": "driver",
+    "name": "هری چانگ",
+    "email": "harry@example.com",
+    "password": "password1234",
+    "city": "تهران",
+    "area": "تجریش - ولیعصر"
+  },
+  {
+    "role": "driver",
+    "name": "راننده تست",
+    "email": "test.driver@example.com",
+    "password": "testpass123",
+    "city": "تهران",
+    "area": "منطقه تست",
+    "activityAreas": "منطقه ۱، منطقه ۲",
+    "ratings": "4.5",
+    "trips": [
+      {
+        "id": 1,
+        "details": "سفر اول"
+      },
+      {
+        "id": 2,
+        "details": "سفر دوم"
+      }
+    ],
+    "requests": [
+      {
+        "id": 1,
+        "details": "درخواست اول"
+      },
+      {
+        "id": 2,
+        "details": "درخواست دوم"
+      }
+    ]
+  },
+  {
+    "role": "passenger",
+    "name": "لیدی گاگا",
+    "email": "gaga@example.com",
+    "password": "pass123",
+    "taxi_requests": [
+      {
+        "id": 1,
+        "origin": "میدان آزادی",
+        "destination": "ونک",
+        "fare": 25000
+      }
+    ],
+    "trips": [
+      {
+        "id": 1,
+        "origin": "میدان آزادی",
+        "destination": "ونک",
+        "fare": 25000
+      }
+    ]
+  }
+]
+

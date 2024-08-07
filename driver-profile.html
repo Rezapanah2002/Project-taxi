@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="asset/icon.png">
+    <link rel="stylesheet" href="./styles/driver-profile.css">
+    <title>پروفایل راننده - Safarak</title>
+</head>
+
+<body>
+<nav>
+    <div class="heading">
+        <img src="asset/logo.png" class="logo">
+        <span class="site-name">Safarak</span>
+    </div>
+    <ul class="navbar">
+        <li><a href="comment.html">صدای مشتری</a></li>
+        <li><a href="landing_page.html#contact">تماس با ما</a></li>
+        <li><a href="landing_page.html#services">خدمات</a></li>
+        <li><a href="landing_page.html#about-us">درباره ما</a></li>
+        <li><a href="auth.html">ورود / ثبت نام</a></li>
+    </ul>
+</nav>
+
+<section class="profile-section">
+    <div class="profile-container">
+        <h2>پروفایل راننده</h2>
+        <div class="profile-tabs">
+            <button class="tablink" onclick="openTab(event, 'personal')">اطلاعات شخصی</button>
+            <button class="tablink" onclick="openTab(event, 'requests')">درخواست‌های تاکسی</button>
+            <button class="tablink" onclick="openTab(event, 'ratings')">امتیازات و سفرها</button>
+        </div>
+
+        <div id="personal" class="tabcontent">
+            <div class="personal-info">
+                <h3>اطلاعات شخصی</h3>
+                <p><strong>نام:</strong> <span id="driver-name"></span></p>
+                <p><strong>ایمیل:</strong> <span id="driver-email"></span></p>
+                <p><strong>شهر:</strong> <span id="driver-city"></span></p>
+                <p><strong>ناحیه:</strong> <span id="driver-area"></span></p>
+            </div>
+        </div>
+
+        <div id="requests" class="tabcontent" style="display:none">
+            <div class="taxi-requests">
+                <h3>درخواست‌های تاکسی</h3>
+                <ul id="driver-requests"></ul>
+            </div>
+        </div>
+
+        <div id="ratings" class="tabcontent" style="display:none">
+            <div class="ratings-info">
+                <h3>امتیازات دریافتی و سفرهای انجام شده</h3>
+                <p><strong>ناحیه‌های فعالیت:</strong> <span id="driver-activity-areas"></span></p>
+                <p><strong>امتیازات دریافتی:</strong> <span id="driver-ratings"></span></p>
+                <ul id="driver-trips"></ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./scripts/driver-profile.js"></script>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="asset/logo.png" class="footer-logo-img">
+                <span class="footer-site-name">Safarak</span>
+            </div>
+            <div class="footer-links">
+                <a href="landing_page.html#about-us">درباره ما</a>
+                <a href="landing_page.html#services">خدمات</a>
+                <a href="landing_page.html#contact">تماس با ما</a>
+                <a href="auth.html">ورود / ثبت نام</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Safarak. All rights reserved.</p>
+            <p>Web-programing-Spring 2024</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
